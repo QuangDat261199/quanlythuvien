@@ -1,0 +1,39 @@
+runtime: php
+env: flex
+#
+#runtime_config:
+#  document_root: public
+#
+## Ensure we skip ".env", which is only for local development
+# skip_files:
+#  - .env
+#
+#env_variables:
+#  # Put production environment variables here.
+#  APP_LOG: errorlog
+#  APP_KEY: base64:6wVHSH10gwoJrGpez8F2AtbFCa1T7oqguYdsZEZ/zGA=
+#  CACHE_DRIVER: database
+#  SESSION_DRIVER: database
+#  ## Set these environment variables according to your CloudSQL configuration.
+#  DB_HOST: 35.241.121.154
+#  DB_DATABASE: quanlythuvien
+#  DB_USERNAME: nhom6
+#  DB_PASSWORD: 123456
+#  DB_SOCKET: "/cloudsql/sodium-lodge-296613:asia-east2:thuvien"
+#
+#beta_settings:
+#    # for Cloud SQL, set this value to the Cloud SQL connection name,
+#    # e.g. "project:region:cloudsql-instance"
+#    cloud_sql_instances: "sodium-lodge-296613:asia-east2:thuvien"
+# runtime: php
+
+
+env_variables:
+  APP_KEY: base64:6wVHSH10gwoJrGpez8F2AtbFCa1T7oqguYdsZEZ/zGA=
+  APP_STORAGE: /tmp
+  CACHE_DRIVER: database
+  SESSION_DRIVER: database
+  DB_DATABASE: quanlythuvien
+  DB_USERNAME: nhom6
+  DB_PASSWORD: 123456
+  DB_SOCKET: "/cloudsql/cloud-297515:asia-southeast1:thuvien"
